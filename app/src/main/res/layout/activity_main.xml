@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_marginBottom="10dp"
+        android:id="@+id/yaConstraint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Я.Музыка constraint"
+        android:textColor="@color/calc_green"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="YaCons"
+        android:layout_marginTop="250dp"
+        />
+
+
+    <TextView
+        android:layout_margin="10dp"
+        android:id="@+id/yaNoConstraint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Я.Музыка без constraint"
+        android:textColor="#aa2222"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/yaConstraint"
+        />
+
+    <TextView
+        android:layout_margin="10dp"
+
+        android:id="@+id/fbConstraint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Facebook constraint"
+        android:textColor="@color/calc_green"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/yaNoConstraint"
+        android:onClick="FBCons"
+        />
+
+    <TextView
+        android:layout_margin="10dp"
+
+        android:id="@+id/fbNoConstraint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Facebook без constraint"
+        android:textColor="@color/calc_green"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/fbConstraint"
+        android:onClick="FBNoCons"
+        />
+    <TextView
+        android:layout_margin="10dp"
+        android:onClick="CalcCons"
+        android:id="@+id/calcConstraint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Калькулятор constraint"
+        android:textColor="@color/calc_green"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/fbNoConstraint" />
+
+
+    <TextView
+        android:layout_margin="10dp"
+        android:id="@+id/calcNoConstraint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Калькулятор без constraint"
+        android:textColor="#aa2222"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/calcConstraint" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

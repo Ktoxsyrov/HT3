@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NoConstraintCalc"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/calculations"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+
+        android:gravity="end"
+        android:text="10+12"
+        android:textSize="35sp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="24"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="@id/calculations"
+        app:layout_constraintTop_toBottomOf="@id/calculations" />
+
+    <ImageButton
+        android:id="@+id/backspace"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_outline_backspace_24"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <ImageButton
+        android:id="@+id/time"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="30dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_baseline_access_time_24"
+        app:layout_constraintBottom_toBottomOf="@+id/backspace"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <ImageButton
+        android:id="@+id/ruler"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_ruler_h_svgrepo_com"
+        app:layout_constraintBottom_toBottomOf="@+id/time"
+        app:layout_constraintStart_toEndOf="@+id/time" />
+
+    <ImageButton
+        android:id="@+id/calc"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_baseline_calculate_24"
+        app:layout_constraintBottom_toBottomOf="@+id/time"
+        app:layout_constraintStart_toEndOf="@+id/ruler" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:background="#eeeeee"
+        app:layout_constraintBottom_toTopOf="@+id/C"
+        tools:layout_editor_absoluteX="20dp" />
+
+    <android.widget.Button
+        android:id="@+id/C"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:background="@drawable/calc_button"
+        android:stateListAnimator="@null"
+        android:text="C"
+        android:textColor="#aa2222"
+        android:textSize="25sp"
+        app:backgroundTint="@color/calc_back"
+        app:layout_constraintBottom_toTopOf="@+id/seven"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent="0.25" />
+
+    <android.widget.Button
+        android:id="@+id/percent"
+        style="@style/greenCalcButton"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+
+        android:background="@drawable/calc_button"
+        android:stateListAnimator="@null"
+        android:text="%"
+        app:backgroundTint="@color/calc_back"
+        app:layout_constraintBottom_toBottomOf="@+id/brackets"
+        app:layout_constraintStart_toEndOf="@id/brackets"
+        app:layout_constraintWidth_percent="0.25" />
+
+    <android.widget.Button
+        android:id="@+id/divide"
+        style="@style/greenCalcButton"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+
+        android:background="@drawable/calc_button"
+        android:stateListAnimator="@null"
+        android:text="÷"
+        android:textSize="30sp"
+        app:backgroundTint="@color/calc_back"
+
+        app:layout_constraintBottom_toBottomOf="@+id/percent"
+        app:layout_constraintStart_toEndOf="@id/percent"
+        app:layout_constraintWidth_percent="0.25" />
+
+    <android.widget.Button
+        android:id="@+id/brackets"
+        style="@style/greenCalcButton"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:background="@drawable/calc_button"
+
+        android:stateListAnimator="@null"
+        android:text="()"
+        app:backgroundTint="@color/calc_back"
+        app:layout_constraintBottom_toBottomOf="@+id/C"
+        app:layout_constraintStart_toEndOf="@id/C"
+        app:layout_constraintWidth_percent="0.25" />
+
+
+    <android.widget.Button
+        android:id="@+id/seven"
+        style="@style/calcButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/calc_button"
+        android:stateListAnimator="@null"
+        android:text="7"
+        app:backgroundTint="@color/calc_back"
+        app:layout_constraintBottom_toTopOf="@+id/four"
+        app:layout_constraintDimensionRatio="1:1"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent="0.25" />
+
+    <android.widget.Button
+        android:id="@+id/eight"
+        style="@style/calcButton"
+        android:stateListAnimator="@null"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_percent="0.25"
+        app:layout_constraintDimensionRatio="1:1"
+        android:layout_height="0dp"
+        android:background="@drawable/calc_button"
+        android:text="8"
+        app:backgroundTint="@color/calc_back"
+        app:layout_constraintStart_toEndOf="@id/seven"
+        app:layout_constraintTop_toBottomOf="@+id/C" />
+
+    <android.widget.Button
+        android:id="@+id/nine"
+        style="@style/calcButton"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_percent="0.25"
+        app:layout_constraintDimensionRatio="1:1"
+        android:layout_height="0dp"
+
+        android:background="@drawable/calc_button"
+        android:stateListAnimator="@null"
+        android:text="9"
+        app:backgroundTint="@color/calc_back"
+        app:layout_constraintStart_toEndOf="@id/eight"
+        app:layout_constraintTop_toBottomOf="@+id/C" />
+
+    <android.widget.Button
+        android:id="@+id/multiply"
+        style="@style/greenCalcButton"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_percent="0.25"
+        app:layout_constraintDimensionRatio="1:1"
+        android:layout_height="0dp"
+        android:stateListAnimator="@null"
+        android:background="@drawable/calc_button"
+        android:text="⨯"
+        app:backgroundTint="@color/calc_back"
+
+        app:layout_constraintStart_toEndOf="@id/nine"
+        app:layout_constraintTop_toBottomOf="@+id/C" />
+
+    <android.widget.Button
+        android:id="@+id/four"
+        style="@style/calcButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/calc_button"
+        android:stateListAnimator="@null"
+        android:text="4"
+        app:backgroundTint="@color/calc_back"
+        app:layout_constraintBottom_toTopOf="@+id/one"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent="0.25" />
+
+    <android.widget.Button
+        android:id="@+id/five"
+        android:stateListAnimator="@null"
+        style="@style/calcButton"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_percent="0.25"
+        app:layout_constraintDimensionRatio="1:1"
+        android:layout_height="0dp"
+        android:background="@drawable/calc_button"
+        android:text="5"
+        app:backgroundTint="@color/calc_back"
+        app:layout_constraintStart_toEndOf="@id/four"
+        app:layout_constraintTop_toBottomOf="@+id/seven" />
+
+    <android.widget.Button
+        android:stateListAnimator="@null"
+        android:id="@+id/six"
+        style="@style/calcButton"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_percent="0.25"
+        app:layout_constraintDimensionRatio="1:1"
+        android:layout_height="0dp"
+        android:background="@drawable/calc_button"
+        android:text="6"
+        app:backgroundTint="@color/calc_back"
+        app:layout_constraintStart_toEndOf="@id/five"
+        app:layout_constraintTop_toBottomOf="@+id/seven" />
+
+    <android.widget.Button
+        android:stateListAnimator="@null"
+        android:id="@+id/minus"
+        style="@style/greenCalcButton"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_percent="0.25"
+        app:layout_constraintDimensionRatio="1:1"
+        android:layout_height="0dp"
+        android:background="@drawable/calc_button"
+        android:text="-"
+        app:backgroundTint="@color/calc_back"
+
+        app:layout_constraintStart_toEndOf="@id/six"
+        app:layout_constraintTop_toBottomOf="@+id/seven" />
+
+    <android.widget.Button
+        android:id="@+id/one"
+        style="@style/calcButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/calc_button"
+        android:stateListAnimator="@null"
+        android:text="1"
+        app:backgroundTint="@color/calc_back"
+        app:layout_constraintBottom_toTopOf="@+id/plus_minus"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent="0.25" />
+
+    <android.widget.Button
+        android:stateListAnimator="@null"
+        android:id="@+id/two"
+        style="@style/calcButton"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_percent="0.25"
+        app:layout_constraintDimensionRatio="1:1"
+        android:layout_height="0dp"
+        android:background="@drawable/calc_button"
+        android:text="2"
+        app:backgroundTint="@color/calc_back"
+        app:layout_constraintStart_toEndOf="@id/one"
+        app:layout_constraintTop_toBottomOf="@+id/four" />
+
+    <android.widget.Button
+        android:stateListAnimator="@null"
+        android:id="@+id/three"
+        style="@style/calcButton"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_percent="0.25"
+        app:layout_constraintDimensionRatio="1:1"
+        android:layout_height="0dp"
+        android:background="@drawable/calc_button"
+        android:text="3"
+        app:backgroundTint="@color/calc_back"
+        app:layout_constraintStart_toEndOf="@id/two"
+        app:layout_constraintTop_toBottomOf="@+id/four" />
+
+    <android.widget.Button
+        android:stateListAnimator="@null"
+        android:id="@+id/plus"
+        style="@style/greenCalcButton"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_percent="0.25"
+        app:layout_constraintDimensionRatio="1:1"
+        android:layout_height="0dp"
+        android:background="@drawable/calc_button"
+        android:text="+"
+        app:backgroundTint="@color/calc_back"
+        app:layout_constraintStart_toEndOf="@id/three"
+        app:layout_constraintTop_toBottomOf="@+id/four" />
+
+    <android.widget.Button
+        android:id="@+id/plus_minus"
+        style="@style/calcButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/calc_button"
+        android:stateListAnimator="@null"
+        android:text="±"
+        app:backgroundTint="@color/calc_back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent="0.25" />
+
+    <android.widget.Button
+        android:id="@+id/zero"
+        style="@style/calcButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/calc_button"
+        android:stateListAnimator="@null"
+        android:text="0"
+        app:backgroundTint="@color/calc_back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintStart_toEndOf="@id/plus_minus"
+        app:layout_constraintTop_toBottomOf="@+id/one"
+        app:layout_constraintWidth_percent="0.25" />
+
+    <android.widget.Button
+        android:id="@+id/dot"
+        style="@style/calcButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/calc_button"
+        android:stateListAnimator="@null"
+        android:text=","
+        app:backgroundTint="@color/calc_back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintStart_toEndOf="@id/zero"
+        app:layout_constraintTop_toBottomOf="@+id/one"
+        app:layout_constraintWidth_percent="0.25" />
+
+    <android.widget.Button
+        android:id="@+id/equal"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/calc_button"
+        android:stateListAnimator="@null"
+        android:text="="
+        app:backgroundTint="@color/calc_green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintStart_toEndOf="@id/dot"
+        app:layout_constraintTop_toBottomOf="@+id/one"
+        app:layout_constraintWidth_percent="0.25" />
+
+
+</LinearLayout>

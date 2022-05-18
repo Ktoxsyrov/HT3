@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/ktox/Desktop/WB/HT3/app/src/main/res/drawable/calc_button.xml" value="0.183" />
+        <entry key="..\:/Users/ktox/Desktop/WB/HT3/app/src/main/res/drawable/calc_buttons.xml" value="0.154" />
+        <entry key="..\:/Users/ktox/Desktop/WB/HT3/app/src/main/res/drawable/circle_image.xml" value="0.137" />
+        <entry key="..\:/Users/ktox/Desktop/WB/HT3/app/src/main/res/drawable/ic_baseline_format_list_bulleted_24.xml" value="0.1565" />
+        <entry key="..\:/Users/ktox/Desktop/WB/HT3/app/src/main/res/drawable/ic_baseline_keyboard_arrow_down_24.xml" value="0.1565" />
+        <entry key="..\:/Users/ktox/Desktop/WB/HT3/app/src/main/res/drawable/ic_baseline_more_vert_24.xml" value="0.1935" />
+        <entry key="..\:/Users/ktox/Desktop/WB/HT3/app/src/main/res/drawable/ic_baseline_play_arrow_24.xml" value="0.1935" />
+        <entry key="..\:/Users/ktox/Desktop/WB/HT3/app/src/main/res/drawable/ic_baseline_skip_next_24.xml" value="0.1935" />
+        <entry key="..\:/Users/ktox/Desktop/WB/HT3/app/src/main/res/drawable/ic_baseline_skip_previous_24.xml" value="0.1935" />
+        <entry key="..\:/Users/ktox/Desktop/WB/HT3/app/src/main/res/drawable/ic_baseline_tv_24.xml" value="0.1565" />
+        <entry key="..\:/Users/ktox/Desktop/WB/HT3/app/src/main/res/drawable/ic_facebook_new_2019_seeklogo_com_3.xml" value="0.1565" />
+        <entry key="..\:/Users/ktox/Desktop/WB/HT3/app/src/main/res/drawable/ic_heart_dislike_outline_svgrepo_com.xml" value="0.1935" />
+        <entry key="..\:/Users/ktox/Desktop/WB/HT3/app/src/main/res/drawable/ic_heart_like_svgrepo_com.xml" value="0.1935" />
+        <entry key="..\:/Users/ktox/Desktop/WB/HT3/app/src/main/res/drawable/ic_heart_svgrepo_com.xml" value="0.1935" />
+        <entry key="..\:/Users/ktox/Desktop/WB/HT3/app/src/main/res/drawable/ic_outline_backspace_24.xml" value="0.154" />
+        <entry key="..\:/Users/ktox/Desktop/WB/HT3/app/src/main/res/drawable/ic_outline_timer_24.xml" value="0.154" />
+        <entry key="..\:/Users/ktox/Desktop/WB/HT3/app/src/main/res/drawable/ic_ruler_h_svgrepo_com.xml" value="0.157" />
+        <entry key="..\:/Users/ktox/Desktop/WB/HT3/app/src/main/res/drawable/ic_share_arrows_svgrepo_com.xml" value="0.1935" />
+        <entry key="..\:/Users/ktox/Desktop/WB/HT3/app/src/main/res/drawable/ic_share_svgrepo_com.xml" value="0.1935" />
+        <entry key="..\:/Users/ktox/Desktop/WB/HT3/app/src/main/res/drawable/rounded_image.xml" value="0.137" />
+        <entry key="..\:/Users/ktox/Desktop/WB/HT3/app/src/main/res/drawable/tg_circle_avatar.xml" value="0.137" />
+        <entry key="..\:/Users/ktox/Desktop/WB/HT3/app/src/main/res/layout/activity_constraint_calc.xml" value="0.33" />
+        <entry key="..\:/Users/ktox/Desktop/WB/HT3/app/src/main/res/layout/activity_constraint_fb.xml" value="0.22" />
+        <entry key="..\:/Users/ktox/Desktop/WB/HT3/app/src/main/res/layout/activity_constraint_tg.xml" value="0.22" />
+        <entry key="..\:/Users/ktox/Desktop/WB/HT3/app/src/main/res/layout/activity_constraint_vk.xml" value="0.5" />
+        <entry key="..\:/Users/ktox/Desktop/WB/HT3/app/src/main/res/layout/activity_constraint_ya.xml" value="0.22" />
+        <entry key="..\:/Users/ktox/Desktop/WB/HT3/app/src/main/res/layout/activity_main.xml" value="0.3625" />
+        <entry key="..\:/Users/ktox/Desktop/WB/HT3/app/src/main/res/layout/activity_no_constraint_calc.xml" value="0.1609375" />
+        <entry key="..\:/Users/ktox/Desktop/WB/HT3/app/src/main/res/layout/activity_no_constraint_fb.xml" value="0.175" />
+        <entry key="..\:/Users/ktox/Desktop/WB/HT3/app/src/main/res/layout/activity_no_constraint_tg.xml" value="0.175" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
